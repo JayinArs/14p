@@ -1,0 +1,15 @@
+/* ========================================================================
+     Component: media-queries
+ ========================================================================== */
+body {
+  font-size: 17px; }
+  body a:hover {
+    color: #2C3A47; }
+  body header .topnavbar {
+    background-image: -webkit-linear-gradient(left, #6D214F 0%, #2C3A47 100%);
+    background-image: -o-linear-gradient(left, #6D214F 0%, #2C3A47 100%);
+    background-image: linear-gradient(to right, #6D214F 0%, #2C3A47 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6D214F', endColorstr='#FF2C3A47', GradientType=1); }
+    body header .topnavbar .navbar-header {
+      background: none; }

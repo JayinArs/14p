@@ -1,0 +1,27 @@
+@import '../app/variables';
+@import '../bootstrap/bootstrap/mixins/gradients';
+@import '../app/media-queries';
+
+$nav-top-bg: $brand-info;
+$nav-top-bg-start: $nav-top-bg;
+$nav-top-bg-start: #6D214F; //#6200EA;
+$nav-top-bg-end: $brand-info-light;
+$nav-top-bg-end: #2C3A47; //#D500F9;
+$nav-header-bg: transparent;
+
+body {
+  font-size: $font-size-base;
+  a {
+    &:hover {
+      color: $nav-top-bg-end;
+    }
+  }
+  header {
+    .topnavbar {
+      @include gradient-horizontal($nav-top-bg-start, $nav-top-bg-end);
+      .navbar-header {
+        background: none;
+      }
+    }
+  }
+}

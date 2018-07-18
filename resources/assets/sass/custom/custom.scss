@@ -1,0 +1,148 @@
+.hppFrame {
+  width: 100%;
+  border: none;
+  height: 342px;
+}
+
+.payment-dialog {
+  min-width: 710px;
+}
+
+.pay_button {
+  margin-right: 6px;
+}
+
+
+#flotTip {
+  position: relative;
+  padding: 5px;
+  font-size: 12px !important;
+  border-radius: 2px !important;
+  border-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  color: #f1f1f1;
+  z-index: 5;
+}
+
+.small-chart-height {
+  height: 275px;
+}
+
+.dashboard-icon {
+  height: 50px;
+  width: auto;
+}
+
+.dashboard-listgroup {
+  height: 228px;
+}
+
+.dashboard-listgroup-item {
+  height: 76px;
+}
+
+.dashboard-box-title {
+  font-family: "Source Sans Pro", Georgia, Serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dashboard-box-title-text {
+  font-family: "Source Sans Pro", Georgia, Serif;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.dashboard-box-title-total-rev {
+  color: #f05050;
+}
+
+.dashboard-box-title-local-rev {
+  color: #21b1dd;
+}
+
+.dashboard-box-title-national-rev {
+  color: #2b957a;
+}
+
+.dashboard-box-title-deal-closed {
+  color: #2a9579;
+}
+
+.dashboard-box-title-sales-contract {
+  color: #7266ba;
+}
+
+.dashboard-box-title-client-contract {
+  color: #f05050;
+}
+
+.dashboard-local-progress-color {
+  background-color: #21b1dd;
+}
+
+.dashboard-national-progress-color {
+  background-color: #2a9579;
+}
+
+.dashboard-invoices-box {
+  font-family: "Source Sans Pro", Georgia, Serif;
+  font-weight: normal !important;
+  color: #ffffff !important;
+  font-size: 16px;
+}
+
+.dashboard-invoices-box-header {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  background-color: #2e80e7 !important;
+  font-weight: bold !important;
+}
+
+.dashboard-invoices-box-panel {
+  background-color: #5d9cec !important;
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+}
+
+.dashboard-invoices-box-panel .dashboard-icon {
+  height: 30px;
+}
+
+.dashboard-invoices-box-panel .bb,
+.dashboard-invoices-box-panel .br {
+  border-color: #8bb8f1;
+}
+
+.dashboard-invoices-box-panel-title {
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+.dashboard-invoices-box-panel-item {
+  height: 55px;
+}
+
+.dashboard-invoices-sub-panel {
+  background-color: #5d9cec !important;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 10px;
+  padding-bottom: 0;
+}
+
+.divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.totalInvoiced, .paidInvoiced, .outstandingInvoiced, #dealTimelineDiv, #totalRevenueDiv,
+#localRevenueDiv, #nationalRevenueDiv, #closedDealsDiv, #salesContractDealsDiv, #clientContractDealsDiv {
+  cursor: pointer;
+}
