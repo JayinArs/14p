@@ -3,6 +3,7 @@
 namespace App\Notifications;
 
 use App\Event;
+use App\Member;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -52,13 +53,14 @@ class ImportantDate extends Notification
 			->line( 'Thank you for using our application!' );
 	}
 
-	public function toFirebase( $notifiable )
+	public function toFirebase( Member $notifiable )
 	{
 		return ( new FirebaseMessage() )
-			->notification( [
-				                'title' => 'Important Date',
-				                'body'  => $this->event->title
-			                ] )
+			->setData( [
+				           'notification_id' => 'notification-' . $this->event->id . $notifiable->id,
+				           'title'           => 'Important Date',
+				           'body'            => $this->event->title
+			           ] )
 			->setPriority( 'high' );
 	}
 
