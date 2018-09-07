@@ -15,6 +15,7 @@ Route::group( [ 'prefix' => 'v1' ], function () {
 	 * Member Routes
 	 */
 	Route::post( 'register', 'Api\MemberAuthController@register' );
+	Route::post( 'register_v2', 'Api\MemberAuthController@simple_register' );
 	Route::post( 'login', 'Api\MemberAuthController@login' );
 	Route::post( 'member/{member_id}/update', 'Api\MembersController@edit' );
 	Route::post( 'member/{member_id}/update/password', 'Api\MembersController@update_password' );

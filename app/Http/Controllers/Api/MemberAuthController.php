@@ -137,4 +137,25 @@ class MemberAuthController extends Controller
 
 		return ApiResponse::create( Config::get( 'constants.HTTP_CODES.FAILED' ), null, 'Failed to register' );
 	}
+
+	public function simple_register( Request $request )
+	{
+		$first_name = rand( 0, 9999999999 );
+		$last_name  = rand( 0, 9999999999 );
+		$email      = $first_name . '_' . $last_name . '@14pearls.com';
+
+		$member = Member::create( [
+			                          'first_name' => $first_name,
+			                          'last_name'  => $last_name,
+			                          'email'      => $email,
+			                          'password'   => bcrypt( $email ),
+			                          'country'    => $request->get( 'country' ),
+			                          'guid'       => $request->get( 'guid' ),
+			                          'timezone'   => $request->get( 'timezone' ),
+		                          ] );
+
+		return ApiResponse::create( Config::get( 'constants.HTTP_CODES.SUCCESS' ), [
+			'member' => $member
+		] );
+	}
 }
